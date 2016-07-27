@@ -1,0 +1,41 @@
+$buttonWidth : 25px;
+$buttonHeight : $buttonWidth;
+
+.menu-button-1{
+  width: $buttonWidth;
+  height: $buttonHeight;
+  margin: 20px auto;
+  .bar{
+    width: 25px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    display: block;
+    opacity:1;
+
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+    &.open:first-child{
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &.open:last-child{
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &.open:nth-child(2){
+      margin-left: 5px;
+    }
+  }
+}
