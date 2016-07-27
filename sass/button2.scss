@@ -13,6 +13,17 @@ $buttonHeight : $buttonWidth;
     margin-left: 0px;
     display: block;
     opacity:1;
+    position: absolute;
+    &:nth-child(2){
+      margin-top: 8px;
+    }
+    &:nth-child(3){
+      margin-top: 8px;
+    }
+    &:nth-child(4){
+      margin-top: 16px;
+    }
+
 
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -21,21 +32,24 @@ $buttonHeight : $buttonWidth;
     transition: all 0.2s linear;
 
     &.open:first-child{
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      opacity: 0;
     }
     &.open:last-child{
+      opacity: 0;
+    }
+    &.open:nth-child(2){
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
     }
-    &.open:nth-child(2){
-      opacity: 0;
+    &.open:nth-child(3){
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
     }
   }
 }

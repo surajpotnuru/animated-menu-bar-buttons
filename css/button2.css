@@ -10,24 +10,33 @@
     margin-left: 0px;
     display: block;
     opacity: 1;
+    position: absolute;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear; }
+    .menu-button-2 .bar:nth-child(2) {
+      margin-top: 8px; }
+    .menu-button-2 .bar:nth-child(3) {
+      margin-top: 8px; }
+    .menu-button-2 .bar:nth-child(4) {
+      margin-top: 16px; }
     .menu-button-2 .bar.open:first-child {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+      opacity: 0; }
     .menu-button-2 .bar.open:last-child {
+      opacity: 0; }
+    .menu-button-2 .bar.open:nth-child(2) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg); }
-    .menu-button-2 .bar.open:nth-child(2) {
-      opacity: 0; }
+    .menu-button-2 .bar.open:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 /*# sourceMappingURL=button2.css.map */

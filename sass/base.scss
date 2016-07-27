@@ -29,5 +29,24 @@ body{
       font-size: 35px;
       letter-spacing: 3px;
     }
+    .start-animating-all{
+      width: 200px;
+      padding: 20px;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      color: white;
+      margin: 0 auto;
+      cursor: pointer;
+
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    .start-animating-all:hover{
+      color: #2196F3;
+      background: #fff;
+    }
   }
 }
