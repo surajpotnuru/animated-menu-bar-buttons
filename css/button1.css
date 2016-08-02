@@ -1,7 +1,8 @@
 .menu-button-1 {
   width: 25px;
   height: 25px;
-  margin: 20px auto; }
+  margin: 20px auto;
+  cursor: pointer; }
   .menu-button-1 .bar {
     width: 25px;
     height: 5px;
